@@ -1,0 +1,4 @@
+--patch-module
+Login_Empresa_IFCoin=_
+--add-reads
+Login_Empresa_IFCoin=ALL-UNNAMED

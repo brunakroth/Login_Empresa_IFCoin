@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="601.0" style="-fx-background-color: #d9d9d9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaCadastroUsuarioController">
+   <children>
+      <Pane layoutX="18.0" layoutY="78.0" prefHeight="259.0" prefWidth="576.0">
+         <children>
+            <Label layoutX="59.0" layoutY="67.0" text="Nome:" />
+            <Label layoutX="61.0" layoutY="116.0" text="Email:" />
+            <Label layoutX="53.0" layoutY="169.0" text="Senha*:" />
+            <Label layoutX="14.0" layoutY="219.0" text="Repita a senha:" />
+            <TextField fx:id="txtNome" layoutX="103.0" layoutY="63.0" prefHeight="27.0" prefWidth="432.0" style="-fx-background-radius: 10; -fx-background-color: rgba(134, 121, 121, 2,50); -fx-text-fill: #000000;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEmail" layoutX="101.0" layoutY="112.0" prefHeight="27.0" prefWidth="432.0" style="-fx-background-radius: 10; -fx-background-color: rgba(134, 121, 121, 2,50); -fx-text-fill: #000000;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtSenha" layoutX="101.0" layoutY="164.0" prefHeight="25.0" prefWidth="432.0" style="-fx-background-radius: 10; -fx-background-color: rgba(134, 121, 121, 1); -fx-text-fill: #000000;" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtSenha2" layoutX="101.0" layoutY="215.0" prefHeight="25.0" prefWidth="432.0" style="-fx-background-radius: 10; -fx-background-color: rgba(134, 121, 121, 1); -fx-text-fill: #000000;" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtId" disable="true" layoutX="103.0" layoutY="21.0" prefHeight="25.0" prefWidth="134.0" style="-fx-background-radius: 10; -fx-background-color: rgba(134, 121, 121, 1); -fx-text-fill: #000000;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="74.0" layoutY="25.0" text="ID:" />
+            <Label fx:id="lblErroNome" layoutX="103.0" layoutY="88.0" textFill="RED" />
+            <Label fx:id="lblErroEmail" layoutX="103.0" layoutY="137.0" textFill="RED" />
+            <Label fx:id="lblErroSenha" layoutX="103.0" layoutY="190.0" textFill="RED" />
+            <Label fx:id="lblErroSenha2" layoutX="103.0" layoutY="241.0" textFill="RED" />
+            <Label fx:id="lblErroSenhaIgual" layoutX="103.0" layoutY="241.0" textFill="RED" />
+            <PasswordField fx:id="pfSenha" layoutX="101.0" layoutY="164.0" prefHeight="27.0" prefWidth="432.0" style="-fx-background-radius: 10; -fx-background-color: rgba(134, 121, 121, 2,50); -fx-text-fill: #000000;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="pfSenha2" layoutX="101.0" layoutY="215.0" prefHeight="27.0" prefWidth="432.0" style="-fx-background-radius: 10; -fx-background-color: rgba(134, 121, 121, 2,50); -fx-text-fill: #000000;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <ImageView fx:id="imgOlho" fitHeight="33.0" fitWidth="32.0" layoutX="538.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@imagens/olho.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgOlhoFechado" fitHeight="33.0" fitWidth="32.0" layoutX="538.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/olhoFechado.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtDataCadastroSenha" disable="true" layoutX="397.0" layoutY="20.0" prefHeight="27.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: rgba(134, 121, 121, 1); -fx-text-fill: #000000;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lblDataCadastro" layoutX="299.0" layoutY="24.0" text="Cadastrado em:" />
+         </children>
+      </Pane>
+      <Pane layoutX="192.0" layoutY="335.0" prefHeight="70.0" prefWidth="219.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="192.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="335.0">
+         <children>
+            <Button fx:id="btnSalvar" layoutX="4.0" layoutY="13.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="211.0" style="-fx-background-color: #867979; -fx-background-radius: 10;" text="Salvar" textFill="#ffab00">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="10.0" offsetX="4.0" offsetY="4.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color red="1.0" green="0.6666666865348816" opacity="0.5299999713897705" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <HBox fx:id="hbVoltar" layoutX="28.0" layoutY="24.0" prefHeight="35.0" prefWidth="93.0">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/seta-curva-esquerda.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" text="Voltar" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </HBox>
+      <HBox layoutX="185.0" layoutY="24.0" prefHeight="35.0" prefWidth="232.0">
+         <children>
+            <Label fx:id="lblCadastroUsuario" prefHeight="35.0" prefWidth="230.0" text="Cadastro de Usuário">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="44.0" fitWidth="134.0" layoutX="460.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/logo_ifcoin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDica1" layoutX="26.0" layoutY="405.0" prefHeight="35.0" prefWidth="321.0" text="* A senha deve ter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e um caractere especial." textAlignment="JUSTIFY" wrapText="true" />
+   </children>
+</AnchorPane>
